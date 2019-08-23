@@ -1,11 +1,11 @@
 import React from 'react';
-import Cart from '../containers/Cart'
+import CartContainer from '../containers/CartContainer'
 
 import '../stylesheets/App.css';
 
 function App() {
   return (
-    <Cart />
+    <CartContainer />
   )
 }
 
