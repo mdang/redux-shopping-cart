@@ -19,9 +19,7 @@ class Shelf extends Component {
       return (
         <li key={ id }>
           { item }
-          <button onClick={ () => {
-            this.props.addItem(item)
-          }}> + </button>
+          <button onClick={ () => this.props.addItem(item) }>+</button>
         </li>
       )
     })

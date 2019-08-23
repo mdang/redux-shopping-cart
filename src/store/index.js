@@ -1,17 +1,10 @@
 import { createStore } from 'redux'
-import rootReducer from '../reducers/index'
+import rootReducer from '../reducers'
 
 export default (initialState) => {
-  return createStore(rootReducer, initialState)
+  return createStore(
+    rootReducer,
+    initialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 }
-
-
-
-
-/**
-import { createStore } from 'redux'
-import todoApp from '../reducers/index'
-const store = createStore(todoApp)
-
-export default store
- */
